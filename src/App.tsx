@@ -21,7 +21,13 @@ function App() {
             <SidebarGroupContent>
               <SidebarMenu>
                 <SidebarMenuItem>
-                  <SidebarMenuButton>Item One</SidebarMenuButton>
+                  <SidebarMenuButton><img src="/public/home.svg" alt="Home icon" />Home</SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton><img src="/public/chat.svg" alt="Chat icon" />New chat</SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton><img src="/public/profile.svg" alt="Profile icon" />Profile</SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
