@@ -7,6 +7,11 @@ import {
     SidebarMenuItem,
     SidebarMenuButton,
   } from "@/components/ui/sidebar"
+  import { 
+    House,
+    MessageCircle,
+    UserRound
+   } from 'lucide-react';
   
   export function AppSidebar() {
     return (
@@ -16,10 +21,10 @@ import {
             <SidebarGroupContent>
               <SidebarMenu className="grid">
                 <SidebarMenuItem>
-                  <SidebarMenuButton>Home</SidebarMenuButton>
+                  <SidebarMenuButton><House />Home</SidebarMenuButton>
                 </SidebarMenuItem>
                 <SidebarMenuItem>
-                  <SidebarMenuButton>Chat</SidebarMenuButton>
+                  <SidebarMenuButton><MessageCircle />Chat</SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
@@ -27,7 +32,7 @@ import {
           <SidebarGroup className="self-end">
             <SidebarGroupContent>
               <SidebarMenuItem className="">
-                  <SidebarMenuButton>Profile</SidebarMenuButton>
+                  <SidebarMenuButton><UserRound />Profile</SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarGroupContent>
           </SidebarGroup>
