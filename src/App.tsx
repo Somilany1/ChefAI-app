@@ -18,7 +18,7 @@ function App() {
         </header>
         <div className="grid grid-rows-3 gap-4 m-4 h-full">
           <div className="bg-gray-50 rounded-2xl">
-            <span className="inline-block m-8">Breakfast Recommendations</span>
+            <span className="inline-block mt-8 ml-8">Breakfast Recommendations</span>
             <AppCarousel></AppCarousel>
           </div>
           <div className="bg-gray-50 rounded-2xl">
