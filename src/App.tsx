@@ -11,12 +11,12 @@ function App() {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarInset>
+      <SidebarInset className="min-h-screen flex flex-col">
         <header className="flex h-fit items-center gap-4 border-b px-4 py-4">
           <SidebarTrigger className="-ml-1" />
           <AppBreadcrumb />
         </header>
-        <div className="grid grid-rows-3 gap-4 m-4 h-full">
+        <div className="grid grid-rows-3 gap-4 m-4 flex-1">
           <div className="bg-gray-50 rounded-2xl">
             <span className="inline-block mt-8 ml-8">Breakfast Recommendations</span>
             <AppCarousel></AppCarousel>
