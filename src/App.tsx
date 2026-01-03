@@ -17,16 +17,16 @@ function App() {
           <AppBreadcrumb />
         </header>
         <div className="grid grid-rows-3 gap-4 m-4 flex-1">
-          <div className="bg-gray-50 rounded-2xl">
+          <div className="flex flex-col bg-gray-50 rounded-2xl">
             <span className="inline-block mt-8 ml-8">Breakfast Recommendations</span>
             <AppCarousel></AppCarousel>
           </div>
-          <div className="bg-gray-50 rounded-2xl">
-            <span className="inline-block m-8">Lunch Recommendations</span>
+          <div className="flex flex-col bg-gray-50 rounded-2xl">
+            <span className="inline-block mt-8 ml-8">Lunch Recommendations</span>
             <AppCarousel></AppCarousel>
           </div>
-          <div className="bg-gray-50 rounded-2xl">
-            <span className="inline-block m-8">Dinner Recommendations</span>
+          <div className="flex flex-col bg-gray-50 rounded-2xl">
+            <span className="inline-block mt-8 ml-8">Dinner Recommendations</span>
             <AppCarousel></AppCarousel>
           </div>
         </div>
