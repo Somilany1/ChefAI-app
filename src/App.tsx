@@ -6,11 +6,20 @@ import {
 import { AppSidebar } from "@/components/ui/app-sidebar"
 import { AppBreadcrumb } from "@/components/ui/app-breadcrumb"
 import { AppCarousel } from "./components/ui/app-carousel"
+import { UserProfileModalWindow } from "./components/ui/user-profile-modal-window"
+import { useState } from "react"
 
 function App() {
+  const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
+
+  const handleProfileModalOpen = () => {
+    setIsProfileModalOpen(!isProfileModalOpen);
+  };
+
   return (
     <SidebarProvider>
-      <AppSidebar />
+      {isProfileModalOpen && <UserProfileModalWindow setIsProfileModalOpen={setIsProfileModalOpen} />}
+      <AppSidebar onProfileClick={handleProfileModalOpen} />
       <SidebarInset className="min-h-screen flex flex-col">
         <header className="flex h-fit items-center gap-4 border-b px-4 py-4">
           <SidebarTrigger className="-ml-1" />

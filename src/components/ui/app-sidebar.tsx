@@ -13,7 +13,7 @@ import {
     UserRound
    } from 'lucide-react';
   
-  export function AppSidebar() {
+  export function AppSidebar({onProfileClick}: {onProfileClick: () => void;}) {
     return (
       <Sidebar>
         <SidebarContent className="grid h-full">
@@ -32,7 +32,7 @@ import {
           <SidebarGroup className="self-end">
             <SidebarGroupContent>
               <SidebarMenuItem className="">
-                  <SidebarMenuButton><UserRound />Profile</SidebarMenuButton>
+                  <SidebarMenuButton onClick={onProfileClick}><UserRound />Profile</SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarGroupContent>
           </SidebarGroup>
