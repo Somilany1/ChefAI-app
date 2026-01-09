@@ -13,12 +13,12 @@ function App() {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   const handleProfileModalOpen = () => {
-    setIsProfileModalOpen(!isProfileModalOpen);
+    setIsProfileModalOpen(true);
   };
 
   return (
     <SidebarProvider>
-      {isProfileModalOpen && <UserProfileModalWindow setIsProfileModalOpen={setIsProfileModalOpen} />}
+      <UserProfileModalWindow isOpen={isProfileModalOpen} onOpenChange={setIsProfileModalOpen} />
       <AppSidebar onProfileClick={handleProfileModalOpen} />
       <SidebarInset className="min-h-screen flex flex-col">
         <header className="flex h-fit items-center gap-4 border-b px-4 py-4">
