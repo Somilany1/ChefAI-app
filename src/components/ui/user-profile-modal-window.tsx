@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/sheet"
 import { UserProfileAvatar } from "./user-profile-avatar"
 import { useState } from "react"
+import { Button } from "@/components/ui/button"
 
 export function UserProfileModalWindow({
   isOpen,
@@ -62,8 +63,18 @@ export function UserProfileModalWindow({
           </div>
         </div>
         <div className="p-4 flex gap-1.5 self-end">
-          <button>Cancel</button>
-          <button>Save</button>
+          <Button
+            className="cursor-pointer rounded-3xl border-[#657138] border bg-inherit text-[#657138] hover:text-[#657138]"
+            variant="outline"
+          >
+            Cancel
+          </Button>
+          <Button
+            className="cursor-pointer rounded-3xl bg-[#657138] text-white hover:bg-[#657138]"
+            type="submit"
+          >
+            Save
+          </Button>
         </div>
       </SheetContent>
     </Sheet>
