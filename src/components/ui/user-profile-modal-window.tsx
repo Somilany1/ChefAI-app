@@ -23,7 +23,7 @@ export function UserProfileModalWindow({
   return (
     <Sheet open={isOpen} onOpenChange={onOpenChange}>
       <SheetContent
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-fit rounded-lg"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w- h-fit rounded-lg"
         style={{ transition: 'none', animation: 'none' }}
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
