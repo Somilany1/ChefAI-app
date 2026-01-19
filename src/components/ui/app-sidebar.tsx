@@ -18,7 +18,7 @@ import {
   export function AppSidebar({onProfileClick}: {onProfileClick: () => void;}) {
     return (
       <Sidebar>
-        <SidebarContent className="grid h-full">
+        <SidebarContent className="grid h-full bg-[#FFFDF5]">
           <SidebarGroup>
             <SidebarGroupContent>
               <SidebarMenu className="grid">
