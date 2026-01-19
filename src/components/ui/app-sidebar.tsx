@@ -10,13 +10,15 @@ import {
   import { 
     House,
     MessageCircle,
-    UserRound
+    UserRound,
+    ShoppingCart,
+    Heart
    } from 'lucide-react';
   
-  export function AppSidebar() {
+  export function AppSidebar({onProfileClick}: {onProfileClick: () => void;}) {
     return (
       <Sidebar>
-        <SidebarContent className="grid h-full">
+        <SidebarContent className="grid h-full bg-[#FFFDF5]">
           <SidebarGroup>
             <SidebarGroupContent>
               <SidebarMenu className="grid">
@@ -26,13 +28,19 @@ import {
                 <SidebarMenuItem>
                   <SidebarMenuButton><MessageCircle />Chat</SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton><ShoppingCart />Shopping Cart</SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton><Heart />Saved</SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
           <SidebarGroup className="self-end">
             <SidebarGroupContent>
               <SidebarMenuItem className="">
-                  <SidebarMenuButton><UserRound />Profile</SidebarMenuButton>
+                  <SidebarMenuButton onClick={onProfileClick}><UserRound />Profile</SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarGroupContent>
           </SidebarGroup>

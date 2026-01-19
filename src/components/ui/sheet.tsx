@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
 import { XIcon } from "lucide-react"
@@ -132,6 +130,7 @@ export {
   SheetTrigger,
   SheetClose,
   SheetContent,
+  SheetOverlay,
   SheetHeader,
   SheetFooter,
   SheetTitle,
